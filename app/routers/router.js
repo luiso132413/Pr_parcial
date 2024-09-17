@@ -3,8 +3,8 @@ let express = require('express');
 let router = express.Router();
  
 const users = require('../controllers/users.controller.js');
-const book = require('../controllers/books.controller.js');
-const author = require('../controllers/authors.controller.js');
+const book = require('../controllers/book.controller.js');
+const author = require('../controllers/author.controller.js');
 
 router.post('/api/user/create', users.create);
 router.get('/api/user/all', users.retrieveAllUsers);
